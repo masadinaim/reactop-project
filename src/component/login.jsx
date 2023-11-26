@@ -62,11 +62,18 @@ function Login() {
               Sign in
             </button>
           </div>
-          <div className="mt-10 text-center">
+          <div className="mt-4 text-center">
+            <div className="text-medium">
+              <a href="/forgot-password" className="text-red-700 hover:text-red-500">
+                Forgot your password?
+              </a>
+            </div>
+          <div className="mt-4 text-center">
             Didn't have an account?{' '}
-            <a href="/register" className="text-red-700">
+            <a href="/register" className="text-blue-700 hover:text-blue-500">
               Register here
             </a>
+          </div>
           </div>
         </form>
       </div>
