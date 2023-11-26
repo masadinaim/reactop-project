@@ -12,6 +12,7 @@ import Benefits from './component/benefit';
 import Login from './component/login';
 import Register from './component/register';
 import ForgotPassword from './component/forgotpw';
+import ResetPassword from './component/resetpw';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/forgotpw" component={ForgotPassword} />
+          <Route path="/resetpw" component={ResetPassword} />
           <Route path="/" exact component={Hero} />
         </PublicLayout>
       </div>

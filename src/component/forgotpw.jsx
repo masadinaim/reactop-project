@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 function ForgotPassword() {
  const [email, setEmail] = useState('');
 
@@ -51,6 +52,13 @@ function ForgotPassword() {
             >
               Request password reset
             </button>
+          </div>
+          <div className="mt-4 text-center">
+            <div className="text-medium">
+              <a href="/resetpw" className="text-red-700 hover:text-red-500">
+                Or reset password here
+              </a>
+            </div>
           </div>
         </form>
       </div>
