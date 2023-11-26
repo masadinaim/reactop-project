@@ -7,9 +7,9 @@ const PublicLayout = ({ children }) => {
     const currentPath = useLocation().pathname;
     return (
        <div>
-         {currentPath !== '/login' && currentPath !== '/register' && <Navbar />}
+         {currentPath !== '/login' && currentPath !== '/register' && currentPath !== '/forgotpw' && <Navbar />}
          {children}
-         {currentPath !== '/login' && currentPath !== '/register' && <Footer />}
+         {currentPath !== '/login' && currentPath !== '/register' && currentPath !== '/forgotpw' && <Footer />}
        </div>
     );
 };
