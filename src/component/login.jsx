@@ -62,6 +62,12 @@ function Login() {
               Sign in
             </button>
           </div>
+          <div className="mt-10 text-center">
+            Didn't have an account?{' '}
+            <a href="/register" className="text-red-700">
+              Register here
+            </a>
+          </div>
         </form>
       </div>
     </div>

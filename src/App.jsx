@@ -10,6 +10,7 @@ import Service from './component/service';
 import Pricing from './component/pricing';
 import Benefits from './component/benefit';
 import Login from './component/login';
+import Register from './component/register';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/pricing" component={Pricing} />
           <Route path="/benefit" component={Benefits} />
           <Route path="/login" component={Login} />
+          <Route path="/register" component={Register} />
           <Route path="/" exact component={Hero} />
         </PublicLayout>
       </div>
