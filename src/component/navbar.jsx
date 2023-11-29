@@ -75,6 +75,12 @@ const Navbar = () => {
               Benefit
             </Link>
             <Link
+              to="/portofolio"
+              className='block mt-4 md:inline-block md:mt-0 font-semibold text-white mr-6 hover:text-red-700'
+            >
+              Portofolio
+            </Link>
+            <Link
               to="/login"
               className="bg-red-700 hover:bg-red-600 text-white font-bold py-2 px-4 rounded mt-6"
             >

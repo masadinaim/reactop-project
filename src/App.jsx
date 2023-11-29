@@ -13,6 +13,7 @@ import Login from './component/login';
 import Register from './component/register';
 import ForgotPassword from './component/forgotpw';
 import ResetPassword from './component/resetpw';
+import Portofolio from './component/portofolio';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/service" component={Service} />
           <Route path="/pricing" component={Pricing} />
           <Route path="/benefit" component={Benefits} />
+          <Route path="/portofolio" component={Portofolio} />
           <Route path="/login" component={Login} />
           <Route path="/register" component={Register} />
           <Route path="/forgotpw" component={ForgotPassword} />
