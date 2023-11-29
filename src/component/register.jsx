@@ -6,10 +6,38 @@ function Register() {
  const [password, setPassword] = useState('');
  const [confirmPassword, setConfirmPassword] = useState('');
 
- const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Name:', name, 'Email:', email, 'Password:', password, 'Confirm Password:', confirmPassword);
- };
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const user = {
+    name,
+    email,
+    password
+  };
+
+  try {
+    const response = await fetch('http://34.126.100.175/user/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(user)
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      // Successful registration
+      console.log('Registration successful');
+      // Redirect to confirmation or login page
+    } else {
+      // Registration error
+      console.error('Registration failed:', data.error);
+      // Display error message to user
+    }
+  } catch (error) {
+    console.error('API call failed:', error);
+  }
+};
 
  return (
     <div className="min-h-screen flex items-center justify-center bg-white py-12 px-4 sm:px-6 lg:px-8">
